@@ -83,3 +83,19 @@ export('qb-inventory.HasItem', function(items, amount)
         return Inventory.GetItemCount(items) >= amount
     end
 end)
+
+export('ox_inventory.HasItem', function(items, amount)
+    amount = amount or 1
+
+    if type(items) == 'table' then
+        for _, v in pairs(items) do
+            if Inventory.GetItemCount(v) < amount then
+                return false
+            end
+        end
+
+        return true
+    else
+        return Inventory.GetItemCount(items) >= amount
+    end
+end)
