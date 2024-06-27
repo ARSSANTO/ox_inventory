@@ -9,7 +9,7 @@ export default function DamagePercent({percent, styles, label}: {percent: number
                     style={{
                         height: '0.2vw',
                         width: `${percent}%`,
-                        backgroundColor: 'rgba(255, 38, 49, 0.6)',
+                        backgroundColor: 'rgba(230, 20, 20, 0.9)',
                         transition: `background ${0.3}s ease, width ${0.3}s ease`,
                     }}
                 >

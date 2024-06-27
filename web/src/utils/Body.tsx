@@ -167,14 +167,14 @@ export default function Body(
                             ref={refs.setFloating}
                             style={{ ...floatingStyles, ...styles, background:'rgba(12, 12, 12, 0.8)',backdropFilter: 'blur(0.3vw)', color: 'white', textAlign:'center', }}
                         >
-                            <div style={{ fontSize: '1vw', fontWeight: 600 ,padding:'10px',}}>{bodypart}</div>
+                            <div style={{ fontSize: '1vw', fontWeight: 600 ,padding:'10px', fontFamily:"Poppins, sans-serif", letterSpacing:'1.5px', textShadow:'rgba(255, 255, 255, 0.9) 0px 0px 18px', }}>{bodypart}</div>
                             <div style={{
                                 width: '14vw',
                                 height: '8vw',
                                 backgroundColor: 'rgba(12, 12, 12, 0.8)',
                                 backdropFilter: 'blur(0.3vw)',
                             }}>
-                                <div style={{ width: '0%', height: '10%', margin: '0.5vw', position: 'absolute' }}>
+                                <div style={{ width: '0%', height: '10%', margin: '0.5vw', position: 'absolute' , fontFamily:"Poppins, sans-serif", letterSpacing:'1.5px', textShadow:'rgba(255, 255, 255, 0.9) 0px 0px 18px', textAlign:'center'}}>
                                     Information
                                     <div style={{ width: '13vw', height: '1.2vw', backgroundColor: 'rgba(171, 171, 171,0.5)', backdropFilter: 'blur(0.4vw)', display: 'flex', flexDirection: 'row', justifyContent: 'center' }}>
                                         <div style={{ width: '50%', display: 'flex', alignContent: 'center', alignItems: 'center', justifyContent: 'center' }}>
@@ -233,35 +233,36 @@ export default function Body(
                     position: 'absolute',
                     marginLeft: '11vw',
                     marginTop: '2.5vw',
-                }} durablitystyles={{ width: '5vw', marginLeft: '15.5vw', marginTop: '1vw', position: 'absolute', fontFamily:'Roboto' }} label={'Head'} percent={100 - bodydamagecal["HEAD"]?.percent} />
+                }} durablitystyles={{ width: '5vw', marginLeft: '15.5vw', marginTop: '1vw', position: 'absolute', fontFamily:'Bebas Neue', letterSpacing:'1.5px', textShadow:'rgba(255, 255, 255, 0.9) 0px 0px 18px', textAlign:'center',}} label={'Head'} percent={100 - bodydamagecal["HEAD"]?.percent} />
                 <Arrowright styles={{
                     width: '10vw',
                     height: '1.8vw',
                     position: 'absolute',
                     marginLeft: '15vw',
                     marginTop: '9vw',
-                }} durablitystyles={{ width: '5vw', marginLeft: '19.5vw', marginTop: '7.5vw', position: 'absolute', fontFamily:'Roboto' }} label={'Right Arm'} percent={100 - bodydamagecal["RARM"]?.percent} />
+                }} durablitystyles={{ width: '5vw', marginLeft: '19.5vw', marginTop: '7.5vw', position: 'absolute', fontFamily:'Bebas Neue', letterSpacing:'1.5px', textShadow:'rgba(255, 255, 255, 0.9) 0px 0px 18px', textAlign:'center',}} label={'Right Arm'} percent={100 - bodydamagecal["RARM"]?.percent} />
                 <Arrowright styles={{
                     width: '10vw',
                     height: '1.8vw',
                     position: 'absolute',
                     marginLeft: '12vw',
                     marginTop: '26vw',
-                }} durablitystyles={{ width: '5vw', marginLeft: '16.5vw', marginTop: '24.5vw', position: 'absolute' , fontFamily:'Roboto'}} label={'Right Leg'} percent={100 - bodydamagecal["RLEG"]?.percent} />
+                }} durablitystyles={{ width: '5vw', marginLeft: '16.5vw', marginTop: '24.5vw', position: 'absolute' , fontFamily:'Bebas Neue', letterSpacing:'1.5px', textShadow:'rgba(255, 255, 255, 0.9) 0px 0px 18px', textAlign:'center',}} label={'Right Leg'} percent={100 - bodydamagecal["RLEG"]?.percent} />
                 <Arrowleft styles={{
                     width: '10vw',
                     height: '1.8vw',
                     position: 'absolute',
                     marginLeft: '1.2vw',
                     marginTop: '26vw',
-                }} durablitystyles={{ width: '5vw', marginLeft: '1.7vw', marginTop: '24.5vw', position: 'absolute' , fontFamily:'Roboto'}} label={'Left Leg'} percent={100 - bodydamagecal["LLEG"]?.percent} />
+                }} durablitystyles={{ width: '5vw', marginLeft: '1.7vw', marginTop: '24.5vw', position: 'absolute' , fontFamily:'Bebas Neue', letterSpacing:'1.5px', textShadow:'rgba(255, 255, 255, 0.9) 0px 0px 18px', textAlign:'center',}} label={'Left Leg'} percent={100 - bodydamagecal["LLEG"]?.percent} />
                 <Arrowleft styles={{
                     width: '10vw',
                     height: '1.8vw',
                     position: 'absolute',
                     marginLeft: '1.2vw',
                     marginTop: '9vw',
-                }} durablitystyles={{ width: '5vw', marginLeft: '1.8vw', marginTop: '7.5vw', position: 'absolute' , fontFamily:'Roboto'}} label={'Left Arm'} percent={100 - bodydamagecal["LARM"]?.percent} />
+                }} durablitystyles={{ width: '5vw', marginLeft: '1.8vw', marginTop: '7.5vw', position: 'absolute' , fontFamily:'Bebas Neue', letterSpacing:'1.5px', textShadow:'rgba(255, 255, 255, 0.9) 0px 0px 18px', textAlign:'center',}} label={'Left Arm'} percent={100 - bodydamagecal["LARM"]?.percent} />
+                
                 <img className="UPPERBODY" style={{ filter: `sepia(${bodydamagecal["UPPER_BODY"]?.percent}%) saturate(300%) brightness(100%) hue-rotate(299deg)` }} alt="Upperbody" src={isEnvBrowser() ? iupperbody :iupperbody} />
                 <img className="img" style={{ filter: `sepia(${bodydamagecal["LOWER_BODY"]?.percent}%) saturate(300%) brightness(100%) hue-rotate(299deg)` }} alt="Lowerbody" src={isEnvBrowser() ? ilowerbody : ilowerbody} />
                 <img className="LLEG" style={{ filter: `sepia(${bodydamagecal["LLEG"]?.percent}%) saturate(300%) brightness(100%) hue-rotate(299deg)` }} alt="Lleg" src={isEnvBrowser() ? illeg : illeg} />
