@@ -4,12 +4,12 @@ export default function DamagePercent({percent, styles, label}: {percent: number
             <div style={{ marginLeft: '0.2vw' }}>
                 {label}
             </div>
-            <div style={{ marginLeft: '0.2vw', border: '1px solid rgba(255,255,255,0.4)'}}>
+            <div style={{ marginLeft: '0.2vw', border: '1px solid rgba(187, 187, 187, 0.5)'}}>
                 <div
                     style={{
                         height: '0.2vw',
                         width: `${percent}%`,
-                        backgroundColor: 'rgba(230, 20, 20, 0.9)',
+                        backgroundColor: 'rgba(180, 0, 0, 0.8)',
                         transition: `background ${0.3}s ease, width ${0.3}s ease`,
                     }}
                 >
